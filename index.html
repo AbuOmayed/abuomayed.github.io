@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abu Omayed</title>
+    <style>
+        :root {
+            --cv-blue: #003366;
+            --text-color: #333333;
+            --bg-color: #ffffff;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--bg-color);
+            padding: 40px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        h1, h2, h3, h4 { color: var(--cv-blue); }
+        h1 { font-size: 2.5em; margin-bottom: 5px; margin-top: 0; }
+        
+        /* New Header Layout with Image */
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #eee;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--cv-blue);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .header-text {
+            text-align: left;
+        }
+        .contact-info { font-size: 0.95em; }
+        .contact-info a { color: var(--cv-blue); text-decoration: none; margin-right: 10px; display: inline-block; }
+        .contact-info a:hover { text-decoration: underline; }
+        
+        section { margin-bottom: 30px; }
+        h2 { 
+            border-bottom: 2px solid var(--cv-blue); 
+            padding-bottom: 5px; 
+            margin-top: 30px; 
+            text-transform: uppercase;
+            font-size: 1.2em;
+        }
+        .item { margin-bottom: 20px; }
+        .item-header { display: flex; justify-content: space-between; align-items: baseline; }
+        .item-title { font-weight: bold; font-size: 1.05em; }
+        .item-date { font-size: 0.95em; color: #555; }
+        .item-subheader { display: flex; justify-content: space-between; align-items: baseline; font-style: italic; margin-bottom: 8px; color: #444; }
+        ul { margin-top: 5px; margin-bottom: 5px; padding-left: 20px; }
+        .pub-list { list-style-type: decimal; padding-left: 20px; }
+        .pub-list li { margin-bottom: 12px; }
+        .flex-cols { display: flex; justify-content: space-between; gap: 20px; }
+        .col { width: 48%; }
+        
+        /* Justified Text Formatting */
+        p, li { 
+            margin-top: 5px; 
+            margin-bottom: 5px; 
+            text-align: justify; 
+        }
+        .bold { font-weight: bold; }
+        
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
+            .header-text {
+                text-align: center;
+            }
+            .item-header, .item-subheader { flex-direction: column; }
+            .flex-cols { flex-direction: column; }
+            .col { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        </head>
+        <!-- Header -->
+        <header class="header-container">
+            <!-- Replace 'profile.jpg' with the actual filename of your image -->
+            <img src="omayed.jpeg" alt="Abu Omayed" class="profile-img">
+            <div class="header-text">
+                <h1>Abu Omayed</h1>
+                <div class="contact-info">
+                    <a href="mailto:abuomayed@gmail.com">abuomayed@gmail.com</a> | 
+                    <a href="https://www.linkedin.com/in/abu-omayed" target="_blank">linkedin.com/in/abu-omayed</a> | 
+                    <a href="https://www.youtube.com/@Statistics-ML-DL-NLP" target="_blank">YouTube</a> <br>
+                    <a href="https://www.researchgate.net/profile/Abu-Omayed-2" target="_blank">ResearchGate</a> | 
+                    <a href="https://scholar.google.com/citations?user=dsu5FNMAAAAJ&hl=en" target="_blank">Google Scholar</a> | 
+                    <a href="https://orcid.org/0009-0006-1607-7979" target="_blank">ORCID: 0009-0006-1607-7979</a> <br>
+                    <a href="https://github.com/AbuOmayed" target="_blank">github.com/AbuOmayed</a> 
+                </div>
+            </div>
+        </header>
+
+        <!-- About Me -->
+        <section>
+            <h2>About Me</h2>
+            <p>I am an AI researcher and computational statistician specializing in the intersection of Data Science, Natural Language Processing, and Audio Signal Processing. With an M.Sc. in Statistics and active publications in multimodal deep learning, I currently lead research on Natural Language Processing and speech AI models at ResearchBuddy AI.</p>
+        </section>
+
+        <!-- Education -->
+        <section>
+            <h2>Education</h2>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Master of Science in Statistics</span>
+                    <span class="item-date">May 2022 | December 2023</span>
+                </div>
+                <div class="item-subheader">
+                    <span>University of Chittagong, Chittagong, Bangladesh</span>
+                </div>
+                <p>CGPA: 3.10/4.00</p>
+                <p>Thesis Title: A Multifaceted Approach to Bangla Speech Emotion Recognition Using Hybrid Feature Fusion and Dimensionality Reduction.</p>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Bachelor of Science in Statistics</span>
+                    <span class="item-date">February 2017 | March 2022</span>
+                </div>
+                <div class="item-subheader">
+                    <span>University of Chittagong, Chittagong, Bangladesh</span>
+                </div>
+                <p>CGPA: 2.91/4.00</p>
+                <p><span class="bold">Principal subjects:</span> Mathematical Statistics, Probability Theory, Statistical Inference, Multivariate Analysis, Biostatistics, Econometrics.</p>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Higher Secondary School Certificate (HSC), Science</span>
+                    <span class="item-date">June 2014 | August 2016</span>
+                </div>
+                <div class="item-subheader">
+                    <span>Patia Govt. College, Chittagong, Bangladesh</span>
+                </div>
+                <p>GPA: 3.67/5.00</p>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Secondary School Certificate (SSC), Science</span>
+                    <span class="item-date">January 2010 | April 2014</span>
+                </div>
+                <div class="item-subheader">
+                    <span>Barkal S.Z High School, Chittagong, Bangladesh</span>
+                </div>
+                <p>GPA: 5.00/5.00</p>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section>
+            <h2>Experience</h2>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">ResearchBuddy AI</span>
+                    <span class="item-date">Chittagong, Bangladesh</span>
+                </div>
+                <div class="item-subheader">
+                    <span>Research Supervisor</span>
+                    <span class="item-date">April 2025 | Present</span>
+                </div>
+                <ul>
+                    <li>Manage advanced research initiatives spanning Natural Language Processing (NLP) and Speech AI.</li>
+                    <li>Oversee end-to-end research workflows, including experimental design, data collection, and model evaluation.</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">University of Chittagong</span>
+                    <span class="item-date">Chittagong, Bangladesh</span>
+                </div>
+                <div class="item-subheader">
+                    <span>Research Assistant</span>
+                    <span class="item-date">August 2023 | March 2025</span>
+                </div>
+                <ul>
+                    <li>Provided statistical modeling support and predictive analytics for departmental research initiatives.</li>
+                    <li>Managed large datasets for time-series analysis and econometric modeling.</li>
+                    <li>Assisted in the development of hybrid deep learning architectures for signal processing tasks.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Publications -->
+        <section>
+            <h2>Publications</h2>
+            <ol class="pub-list">
+                <li><span class="bold">A. Omayed</span>, M. A. Iqbal and M. M. Bhuiyan, "A Multifaceted Approach to Bangla Speech Emotion Recognition Using Hybrid Feature Fusion and Dimensionality Reduction," 2025 28th International Conference on Computer and Information Technology (ICCIT), Cox's Bazar, Bangladesh, 2025, pp. 4753-4758, doi: 10.1109/ICCIT68739.2025.11491393</li>
+                <li><span class="bold">A. Omayed</span>, M. A. Iqbal and M. Alamgir Islam, "A Comparative Analysis of Hybrid Deep Learning Architectures for Detecting Schizophrenia from EEG Signals," 2025 IEEE 2nd International Conference on Computing, Applications and Systems (COMPAS), Kushtia, Bangladesh, 2025, pp. 1-6, doi: 10.1109/COMPAS67506.2025.11381878</li>
+            </ol>
+        </section>
+        
+        
+         <!-- Preprint -->
+        <section>
+            <h2>Preprint</h2>
+            <p><span class="bold">Abu Omayed.</span> A Multifaceted Dimensionality Reduction Pipeline for Bangla Speech Emotion Recognition, 12 May 2026, PREPRINT (Version 1) available at Research Square <a href="https://doi.org/10.21203/rs.3.rs-9643770/v1" target="_blank">https://doi.org/10.21203/rs.3.rs-9643770/v1</a></p>
+        </section>
+        
+        
+
+        <!-- Conferences -->
+        <section>
+            <h2>Conference</h2>
+            <ol class="pub-list">
+                <li>Oral Presentation, <span class="bold">A Data-Driven Approach to Forecasting Crop Transplantation Periods in Bangladesh Using Machine Learning Model</span>, appeared in the proceedings of the 24th International Mathematics Conference, held on 18--19 December 2025, Chittagong -- Bangladesh.</li>
+                <li>Oral Presentation, <span class="bold">A Multifaceted Approach to Bangla Speech Emotion Recognition Using Hybrid Feature Fusion and Dimensionality Reduction</span>, appeared in the proceedings of the 28th International Conference on Computer and Information Technology (ICCIT 2025), held on 19--21 December 2025, Cox's Bazar -- Bangladesh.</li>
+                <li>Oral Presentation, <span class="bold">A Comparative Analysis of Hybrid Deep Learning Architectures for Detecting Schizophrenia from EEG Signals</span>, appeared in the proceedings of the IEEE 2nd International Conference on Computing, Applications and Systems (COMPAS 2025), held on 16--17 October 2025, Kushtia -- Bangladesh.</li>
+            </ol>
+        </section>
+
+
+
+        <!-- Projects -->
+        <section>
+            <h2>Projects</h2>
+            
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">BFFSH-dataset: A Dataset for Sentiment Analysis and Hate Speech Detection of Bangladeshi Football Fans’ Comments on the FIFA World Cup 2026</span>
+                    <span class="item-date">2026</span>
+                </div>
+                <div class="item-subheader">
+                    <span>Lead Researcher | <a href="https://github.com/AbuOmayed/Fotball-Sentiment-and-Hate-speech-Analysis" target="_blank">GitHub Repository</a></span>
+                </div>
+                <ul>
+                    <li>Developed <span class="bold">BFFSH-Dataset</span>, an innovative dual-annotated benchmark dataset of 11,565 Bengali social media comments from Facebook and YouTube posts during the FIFA World Cup 2026.</li>
+                    <li>Used regex text cleansing techniques along with TF-IDF feature extraction to handle noisy and difficult low-resource Bengali text.</li>
+                    <li>Developed and evaluated baseline models (1D-CNN, LSTM, GRU) and sophisticated hybrid models (1D-CNN-LSTM, 1D-CNN-GRU, triple hybrid <span class="bold">1D-CNN-LSTM-GRU</span>) for multi-class sentiment analysis and binary classification of hate speech.</li>
+                    <li>Obtained the best results through the optimally designed triple-hybrid model, achieving an accuracy of <span class="bold">82%</span> (F1-score of 0.74) in sentiment analysis and an accuracy of <span class="bold">81%</span> (F1-score of 0.80) in hate speech detection.</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">A Large-Scale Multiclass Dataset and Comparative Analysis for Bangla Cyberbullying Detection</span>
+                    <span class="item-date">2026</span>
+                </div>
+                <div class="item-subheader">
+                    <span>Supervisor, ResearchBuddy AI | <a href="https://github.com/AbuOmayed/Bangla-Cyberbullying-Detection" target="_blank">GitHub Repository</a></span>
+                </div>
+                <ul>
+                    <li>Consolidated and refined a massive, noisy corpus of 104,218 informal Bangla social media posts, relabeling and structuring the data into a five-class taxonomy.</li>
+                    <li>Conducted comprehensive comparative analyses across Classical ML, Deep Neural Networks with Word2Vec and FastText embeddings, and pre-trained multilingual Transformers (BanglaBERT, MuRIL, XLM-RoBERTa).</li>
+                    <li>Proved that FastText subword tokenization superiorly handles morphological richness, spelling variations, and OOV words in informal Bangla text.</li>
+                    <li>Established a robust new baseline for automated toxic content moderation, with the fine-tuned <span class="bold">BanglaBERT</span> model achieving state-of-the-art predictive performance at <span class="bold">87.76%</span> accuracy.</li>
+                </ul>
+            </div>
+            
+            <div class="item">
+    <div class="item-header">
+        <span class="item-title">BD-CricketSent: A Dataset for Sentiment Analysis of Bangladeshi Cricket Fans' Comments</span>
+        <span class="item-date">2026</span>
+    </div>
+    <div class="item-subheader">
+        <span>Supervisor, ResearchBuddy AI | <a href="https://github.com/AbuOmayed/Sentiment-Analysis-of-Bangladeshi-Cricket-Fans-Comments" target="_blank">GitHub Repository</a></span>
+    </div>
+    <ul>
+        <li>Compiled and structured a benchmark dataset, <span class="bold">BD-CricketSent</span>, consisting of 25,780 informal Bangla social media comments categorized into a balanced three-class sentiment taxonomy (positive, negative, and neutral).</li>
+        <li>Evaluated classical machine learning models trained on TF-IDF features, deep neural networks (CNN, LSTM, GRU) utilizing Word2Vec and FastText embeddings, and fine-tuned pre-trained Transformer models (BanglaBERT, XLM-RoBERTa).</li>
+        <li>Demonstrated that subword FastText embeddings consistently improved Macro F1 scores over static Word2Vec by effectively handling misspelled and morphologically variant tokens in informal Bangla text.</li>
+        <li>Established that the fine-tuned monolingual <span class="bold">BanglaBERT</span> model achieved the highest overall predictive performance, reaching <span class="bold">84.98%</span> accuracy, 85.78% Macro F1, and a 0.97 Micro-AUC.</li>
+    </ul>
+</div>
+            
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">A Multifaceted Approach to Bangla Speech Emotion Recognition Using Hybrid Feature Fusion and Dimensionality Reduction</span>
+                    <span class="item-date">2025</span>
+                </div>
+                <div class="item-subheader">
+                    <span>Lead Researcher | <a href="https://github.com/AbuOmayed/Bangla-Speech-Emoiton-Recognition-SER" target="_blank">GitHub Repository</a></span>
+                </div>
+                <ul>
+                    <li>Proposed a novel feature fusion and dimensionality reduction framework for low-resource Bangla Speech Emotion Recognition (SER) by combining time-domain, frequency-domain, and time-frequency acoustic features with statistical descriptors.</li>
+                    <li>Created a compact multifaceted dataset by individually applying and integrating Principal Component Analysis (PCA), Independent Component Analysis (ICA), and Linear Discriminant Analysis (LDA).</li>
+                    <li>Evaluated frameworks across SUBESCO (7 emotions, 7,000 clips) and KBES (9 emotions, 900 clips) datasets using machine learning classifiers with rigorous hyperparameter tuning.</li>
+                    <li>Achieved state-of-the-art classification accuracies of <span class="bold">87.14%</span> on the SUBESCO dataset and <span class="bold">97.78%</span> on the KBES dataset.</li>
+                </ul>
+            </div>
+
+            
+            
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">A Comparative Analysis of Hybrid Deep Learning Architectures for Detecting Schizophrenia from EEG Signals</span>
+                    <span class="item-date">2025</span>
+                </div>
+                <div class="item-subheader">
+                    <span>Lead Researcher | <a href="https://github.com/AbuOmayed/Detecting-Schizophrenia-by-using-Hybrid-Deep-Learning-Architectures" target="_blank">GitHub Repository</a></span>
+                </div>
+                <ul>
+                    <li>Proposed and evaluated a novel 24-layer triple-hybrid deep learning architecture combining 1D-CNN, LSTM, and GRU layers for automated schizophrenia diagnosis from multi-channel EEG signals.</li>
+                    <li>Designed end-to-end signal preprocessing and data augmentation pipelines involving segmentation, denoising, and normalization to enhance model robustness and generalization.</li>
+                    <li>Established comparative performance benchmarks across various neural network models and activation functions, demonstrating superior performance with the ELU activation function.</li>
+                    <li>Achieved state-of-the-art predictive performance with an outstanding accuracy of <span class="bold">97.04%</span>, 97% precision, 97% recall, and 97% F1-score.</li>
+                </ul>
+            </div>
+
+            
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">A Data-Driven Approach to Forecasting Crop Transplantation Periods in Bangladesh Using Machine Learning</span>
+                    <span class="item-date">2025</span>
+                </div>
+                <div class="item-subheader">
+                    <span>Lead Researcher | <a href = "https://github.com/AbuOmayed/Optimal-Planting-Session-Prediction-by-using-ML-approach" target="_blank">GitHub Repository</a></span>
+                </div>
+                <ul>
+                    <li>Developed a specialized 30-year agro-climatic database (1993–2023) integrating meteorological variables (temperature, rainfall, humidity, sunshine) and agronomic parameters for 103 major crops across 35 weather stations in Bangladesh.</li>
+                    <li>Trained and evaluated K-Nearest Neighbors, Decision Tree, and Random Forest classifiers using 10-fold cross-validation to predict optimal, climate-resilient crop transplanting months.</li>
+                    <li>Achieved a state-of-the-art classification accuracy of <span class="bold">98.95%</span> using the optimized Random Forest model, overcoming severe class imbalance to maintain a consistent F1-score of 0.99.</li>
+                    <li>Conducted robust baseline verification against a ZeroR classifier, demonstrating an 80% accuracy improvement over trivial majority-class prediction and validating the model's reliability for future intelligent agro-advisory systems.</li>
+                </ul>
+            </div>
+            
+            
+            
+             <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Macroeconomic GDP Forecasting Using Ensemble Learning and XAI</span>
+                    <span class="item-date">2025</span>
+                </div>
+                <div class="item-subheader">
+                    <span>Lead Researcher | <a href="https://github.com/AbuOmayed/GDP-prediction-by-using-ensemble-learning-and-XAI" target="_blank">GitHub Repository</a></span>
+                </div>
+                <ul>
+                    <li>Developed a rigorous time-series forecasting pipeline utilizing regularized machine learning ensembles, identifying XGBoost as the optimal architecture to predict GDP growth.</li>
+                    <li>Engineered a multi-stage preprocessing framework on World Bank data, implementing ADF testing for stationarity, VIF for multicollinearity resolution, and AIC/BIC criteria for optimal temporal lag selection.</li>
+                    <li>Evaluated models via time-series walk-forward validation and integrated SHAP (TreeSHAP) to interpret non-linear macroeconomic dependencies.</li>
+                </ul>
+            </div>
+            
+            
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Biostatistical Significance Analysis & Clinical Outcome Modeling</span>
+                    <span class="item-date">2025</span>
+                </div>
+                <div class="item-subheader">
+                    <span>Lead Researcher | <a href="https://github.com/AbuOmayed/Clinical-Significance-Modeling" target="_blank">GitHub Repository</a></span>
+                </div>
+                <ul>
+                    <li>Evaluated an empirical public health dataset of 29,999 clinical records across rural cohorts to identify key demographic, socioeconomic, and physiological risk factors underlying major NCDs.</li>
+                    <li>Designed a robust data pipeline utilizing Missingness Indicator Flags and Stratified Group-Median Imputation.</li>
+                    <li>Implemented rigorous statistical methods including Chi-Square Tests, Welch's t-tests, Kolmogorov-Smirnov screening, and Mann-Whitney U tests.</li>
+                    <li>Isolated high-impact feature-dependency maps for stroke, cardiovascular disease, diabetes, and hypertension prediction matrices.</li>
+                </ul>
+            </div>
+        
+         <!-- Invited Talks & Seminars -->
+        <section>
+            <h2>Seminars</h2>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Guest Speaker: Research Paper Writing Seminar</span>
+                    <span class="item-date">26 October 2026</span>
+                </div>
+                <div class="item-subheader">
+                    <span>International Islamic University Chittagong (IIUC)</span>
+                    <span>Chittagong, Bangladesh</span>
+                </div>
+                <p><span class="bold">Organized By:</span> R&D Committee of the EEE Club, Department of EEE</p>
+                <ul>
+                    <li>Delivered an invited lecture as a resource person, offering strategic guidance to students on Natural Language Processing (NLP) research methodologies and the fundamentals of academic paper writing.</li>
+                </ul>
+            </div>
+        </section>
+        
+        
+        
+        <!-- Awards & Recognition -->
+        <section>
+            <h2>Awards</h2>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Jamal Nazrul Islam Research Excellence Award</span>
+                    <span class="item-date">Feb 2025</span>
+                </div>
+                <div class="item-subheader">
+                    <span>Awarded "Best Student Researcher" at the University of Chittagong</span>
+                    <span>Chittagong, Bangladesh</span>
+                </div>
+                <p><span class="bold">Organized By:</span> Jamal Nazrul Islam Research Center for Mathematics and Physical Sciences & Chittagong University Research and Higher Study Society (CURHS)</p>
+            </div>
+        </section>
+        
+        
+        <!-- Academic Recognition -->
+        <section>
+            <h2>Academic Recognition</h2>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Certificate of Appreciation</span>
+                    <span class="item-date">Dec 2025</span>
+                </div>
+                <p><span class="bold">IEEE Bangladesh Section</span> | Credential ID: Paper ID 1904</p>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Certificate of Presentation</span>
+                    <span class="item-date">Oct 2025</span>
+                </div>
+                <p><span class="bold">IEEE Computer Society</span> | Credential ID: Paper ID 151</p>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Certificate of Participation</span>
+                    <span class="item-date">Dec 2025</span>
+                </div>
+                <p><span class="bold">University of Chittagong</span> | Credential ID: Paper ID 155</p>
+            </div>
+        </section>
+        
+        
+        <!-- Certifications -->
+        <section>
+            <h2>Certifications</h2>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Data Analysis</span>
+                </div>
+                <div class="item-subheader">
+                    <span>Department of Statistics, University of Chittagong, Chittagong, Bangladesh</span>
+        </section>
+
+        
+        <!-- Volunteering -->
+        <section>
+            <h2>Volunteering</h2>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Bangladesh Olympiad on Astronomy and Astrophysics (BDOAA)</span>
+                    <span class="item-date">Jan 2019 | Dec 2019</span>
+                </div>
+                <div class="item-subheader">
+                    <span>Volunteer Coordinator</span>
+                    <span>Chittagong, Bangladesh</span>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Skills -->
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li><span class="bold">Programming:</span> Python</li>
+                <li><span class="bold">Machine Learning:</span> TensorFlow, PyTorch, Scikit-learn</li>
+                <li><span class="bold">Speech & Text Processing:</span> Librosa, NLTK</li>
+                 <li><span class="bold">Data Management:</span> SQL, Pandas</li>
+                <li><span class="bold">Developer Tools:</span> Git, Docker, AWS</li>
+                <li><span class="bold">Soft Skills:</span> Academic Presentation, Research Leadership, Team Mentoring</li>
+            </ul>
+        </section>
+
+        <!-- Language -->
+        <section>
+            <h2>Language</h2>
+            <p><span class="bold">Bengali:</span> Native</p>
+            <p><span class="bold">English:</span> Independent User</p>
+        </section>
+
+    </div>
+</body>
+</html>
